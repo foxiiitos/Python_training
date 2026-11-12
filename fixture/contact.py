@@ -27,4 +27,4 @@ class ContactHelper:
         wd.find_element(By.NAME, "mobile").send_keys(contact.mobile)
         # submit contact creation
         wd.find_element(By.XPATH, "//div[@id='content']/form/input[19]").click()
-        self.app.return_to_home_page()
+        self.app.navigation.return_to_home_page()
